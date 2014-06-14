@@ -9,28 +9,43 @@ Todoistify is an Alfred (v2) Workflow that allows you to easily interact with [T
 
 ## Initial Setup
 
-The initial setup requires you to find your Todoist API key so that Todoistify can properly interact with your Todoist account.
+The initial setup requires you to find and add your Todoist API key so that Todoistify can interact with your Todoist account.
 
-### Locating your Todoist API key
+### Locating Your Todoist API key
 
 * Login to the [Todoist website](https://todoist.com/)
-* Go to Settings (located on the top right)
+* Go to Settings (on top right)
 * Click on the "Account" tab
-* Scroll to the bottom to locate your Todoist API token. 
+* Note your Todoist API token. 
 
 ![Locating your Todoist API token](img/docs_api_key.png)
 
-### Adding your API token to Todoistify
+### Adding Your API token To Todoistify
 
-* Open Alfred
-* Type "todoconfig YOUR_API_TOKEN" (replacing "YOUR_API_TOKEN" with your API token you copied)
-* Press the enter key
-* Enjoy!
+* Type **todoconfig *your api token*** (replace *your api token* with your actual Todoist API token)
+* All done!
 
 ## Using Todoisifty
 
-Type the following within Alfred to use Todoistify:
+**Note**: Italics indicate text you can enter. Single brackets [] denotes optional text.
 
-* **todo [YOUR_TASK_DESCRIPTION]**: Add a task to your inbox
+
+### Adding A Task To Your Inbox
+
+
+* **todo *your task***: Add a task to your inbox
+* **todo *your task* *[!p1 ... !p4]***: Add a task with a priority (see below)
+
+### Other Commands
+
 * **todoweb**: Open Todoist in your default Web browser
-* **todoconfig [YOUR_API_KEY]**: Add your API token to use Todoistify
+* **todoconfig *todoist api key***: Add your API token to use Todoistify
+
+## Priorities
+
+When adding a task, add the following anywhere within your entry to add a priority:
+
+* **!p1**: Default (**not required**); results in no priority
+* **!p2**: Low priority
+* **!p3**: Medium priority
+* **!p4**: High priority
